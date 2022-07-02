@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6e031e4963.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/magazine.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="/js/login.js"></script>
+</head>
+<body>
+
+    <%- include('partials/header') %>
+
+    <main>
+        <div id="carrusel">
+            <div id="carrusel-items" class="content-centered">
+                <div class="carrusel-texto">
+                    <div class="carrusel-titulo">LOGUEATE</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-section" class="content-centered">
+
+            <form action="/login" id="login-form" method="POST">
+                <div>
+                    <label for="">Email</label>
+                    <input type="text" class="login-input" name="email" id="email">
+                    <span>Usuario y clave invalida</span>
+                </div>
+                <div>
+                    <label for="">Clave</label>
+                    <input type="password" class="login-input" name="password" id="">
+                    <span>Falta ingresar este dato</span>
+                </div>
+                <div>
+                    <button type="submit" class="submit">Ingresar</button>
+                </div>
+            </form>
+            
+        </div>
+
+        <div id="seccion2">
+            <div id="awards-section" class="content-centered">
+                <div class="premio-texto">
+                    <div class="premio-titulo">Web Design Awards</div>
+                    <div class="premio-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. In similique ullam non! Dicta odio, nisi cum obcaecati, ratione asperiores enim sapiente necessitatibus, perferendis est eos aperiam minus deleniti exercitationem quis!</div>
+                </div>
+                <div class="premio-img">
+                    <i class="fas fa-award"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <%- include('partials/footer') %>
+
+    <script src="/js/magazine.js"></script>
+
+</body>
+</html>

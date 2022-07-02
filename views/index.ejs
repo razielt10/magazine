@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6e031e4963.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/magazine.css">
+    
+</head>
+<body>
+
+    <%- include('partials/header') %>
+
+    <main>
+        <div id="carrusel">
+            <div id="carrusel-items" class="content-centered">
+                <div class="carrusel-img">
+                    <img src="/img/img-carrusel1.png" alt="">
+                </div>
+                <div class="carrusel-texto">
+                    <div class="carrusel-titulo">Contemporary Art</div>
+                    <div class="carrusel-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. In similique ullam non! Dicta odio, nisi cum obcaecati, ratione asperiores enim sapiente necessitatibus, perferendis est eos aperiam minus deleniti exercitationem quis!</div>
+                </div>
+            </div>
+        </div>
+        <div id="seccion1" class="content-centered">
+            <div class="item1">
+                <div class="icono-redondo">
+                    <i class="fas fa-pencil-alt icono"></i>
+                </div>
+                <h5>Primero</h5>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio ab ex, totam corporis velit quae cum labore asperiores, in libero cupiditate. Atque dicta sequi sunt ratione a, at tempora aut?</div>
+                <div>
+                    <a class="agregar-carrito" href="" data-name="Primero">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="item1">
+                <div class="icono-redondo">
+                    <i class="far fa-lightbulb icono"></i>
+                </div>
+                <h5>Segundo</h5>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio ab ex, totam corporis velit quae cum labore asperiores, in libero cupiditate. Atque dicta sequi sunt ratione a, at tempora aut?</div>
+                <div>
+                    <a class="agregar-carrito" href="" data-name="Segundo">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="item1">
+                <div class="icono-redondo">
+                    <i class="far fa-eye icono"></i>
+                </div>
+                <h5>Tercero</h5>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio ab ex, totam corporis velit quae cum labore asperiores, in libero cupiditate. Atque dicta sequi sunt ratione a, at tempora aut?</div>
+                <div>
+                    <a class="agregar-carrito" href="" data-name="Tercero">Agregar al carrito</a>
+                </div>
+            </div> 
+            
+            
+            <div class="item1">
+                <div class="icono-redondo">
+                    <i class="far fa-eye icono"></i>
+                </div>
+                <h5>Cuarto</h5>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio ab ex, totam corporis velit quae cum labore asperiores, in libero cupiditate. Atque dicta sequi sunt ratione a, at tempora aut?</div>
+                <div>
+                    <a class="agregar-carrito" href="" data-name="Cuarto">Agregar al carrito</a>
+                </div>
+            </div> 
+
+
+            <div class="item1">
+                <div class="icono-redondo">
+                    <i class="far fa-eye icono"></i>
+                </div>
+                <h5>Quinto</h5>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio ab ex, totam corporis velit quae cum labore asperiores, in libero cupiditate. Atque dicta sequi sunt ratione a, at tempora aut?</div>
+                <div>
+                    <a class="agregar-carrito" href="" data-name="Quinto">Agregar al carrito</a>
+                </div>
+            </div> 
+        </div>
+
+        <div id="seccion2">
+            <div id="awards-section" class="content-centered">
+                <div class="premio-texto">
+                    <div class="premio-titulo">Web Design Awards</div>
+                    <div class="premio-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. In similique ullam non! Dicta odio, nisi cum obcaecati, ratione asperiores enim sapiente necessitatibus, perferendis est eos aperiam minus deleniti exercitationem quis!</div>
+                </div>
+                <div class="premio-img">
+                    <i class="fas fa-award"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <%- include('partials/footer') %>
+
+    <script src="/js/magazine.js"></script>
+
+</body>
+</html>

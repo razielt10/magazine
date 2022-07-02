@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.logo {
+    color: #33CDD5;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 42px;
+}
+
+.content-centered {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.icono-menu{
+    text-align: right;
+}
+
+.icono-menu i {
+    font-size: 38px;
+}
+
+.icono-cart {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: red;
+    color: #FFF;
+    padding: 0 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#cart {
+    position: relative;
+    display: none;
+}
+
+#cart-list {
+    display: none;
+    position: absolute;
+    top: 38px;
+    width: 200px;
+    border: #000000 1px solid;
+}
+
+nav {
+    padding: 15px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    right: 0;
+    background-color: #33CDD5;
+}
+
+div.menu ul{
+    list-style: none;
+}
+
+div.menu ul li {
+    padding: 10px;
+    text-align: right;
+}
+
+div.menu ul li a:hover {
+    background-color: #60cbd1b7;
+    border-bottom: 2px solid black;
+}
+
+div.menu ul li a {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px;
+    color: #000000;
+}
+
+#carrusel {
+    background-color: #FCEB00;
+    padding: 20px;
+}
+
+#carrusel div.carrusel-img {
+    text-align: center;
+}
+
+div.carrusel-img img {
+    max-width: 90%;
+}
+
+#carrusel div.carrusel-titulo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+#carrusel div.carrusel-descripcion {
+    text-align: justify;
+}
+
+div.icono-redondo {
+    text-align: center;
+    margin: 10px 0;
+}
+
+div.icono-redondo i.icono {
+    font-size: 40px;
+    background-color: #33CDD5;
+    padding: 20px;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+}
+
+#seccion1 {
+    padding: 10px;
+    text-align: justify;
+}
+
+div.item1 {
+    padding: 10px;
+}
+
+#seccion2 {
+    padding: 20px;
+    text-align: justify;
+    background-color: #33CDD5;
+}
+
+#seccion2 div.premio-titulo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+div.premio-img {
+    text-align: center;
+    margin: 20px;
+}
+
+div.premio-img i {
+    font-size: 150px;
+    color: #FFFFFF;
+}
+
+.agregar-carrito {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color:#3483fa;
+    background-color: rgba(65,137,230,0.15);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.agregar-carrito:hover  {
+    background-color: rgba(65, 137, 230, 0.35);
+}
+
+/* aqui van los estilos para tablets y mas grandes*/
+@media (min-width:768px) {
+
+    .icono-menu {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    .logo {
+        width: 28%;
+    }
+
+    .menu {
+        width: 70%;
+    }
+
+    div.menu ul {
+        display: flex;
+    }
+
+    .menu {
+        position: static;
+        background-color: #FFFFFF;
+    }
+
+    div#carrusel-items {
+        display: flex;
+    }
+
+    div.carrusel-img {
+        width: 40%;
+    }
+
+    div.carrusel-texto {
+        width: 58%;
+    }
+
+    #carrusel-items div.carrusel-titulo {
+        font-size: 35px;
+    }
+
+    div.item1 {
+        background-color: rgba(51,205,213,0.05);
+    }
+
+    div#seccion1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    div#awards-section {
+        display: flex;
+    }
+
+    div.premio-img {
+        width: 34%;
+    }
+
+    div.premio-texto {
+        width: 60%;
+    }
+
+    #menu-list {
+        display: block;
+    }
+}
+
+
+@media (min-width:1024px) {
+    div#seccion1 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

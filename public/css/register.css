@@ -1,0 +1,44 @@
+#carrusel {
+    background-color: #d5c707;
+}
+
+#main-section {
+    padding: 10px;
+}
+
+#register-form>div {
+    padding: 5px;
+}
+
+#register-form>div>label{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#register-form input.login-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #33CDD5;
+}
+
+#register-form button.submit {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #33CDD5;
+    background-color: #33CDD5;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+@media (max-width:475px) {
+    #register-form>div {
+        grid-template-columns: 1fr;
+    }
+    #register-form>div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

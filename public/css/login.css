@@ -1,0 +1,44 @@
+#carrusel {
+    background-color: #d5c707;
+}
+
+#main-section {
+    padding: 10px;
+}
+
+#login-form>div {
+    padding: 5px;
+}
+
+#login-form>div>label{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#login-form input.login-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #33CDD5;
+}
+
+#login-form button.submit {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #33CDD5;
+    background-color: #33CDD5;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+@media (max-width:475px) {
+    #login-form>div {
+        grid-template-columns: 1fr;
+    }
+    #login-form>div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
