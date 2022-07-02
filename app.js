@@ -16,7 +16,8 @@ const app = express()
 //configurar mis archivos estaticos para css e img
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }))
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs'); 
+
 
 //rutas
 app.get('/', mainController.index)
